@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+}
+
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom,#162e04, rgb(78, 104, 78), #657c65);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.hero h1 {
+    color: rgb(217, 245, 214);
+    padding-left: 75px;
+    padding-top: 40px;
+    letter-spacing: 0.02cm;
+    font-weight: 100;
+    font-size: 30px;
+    font-family: Impact;
+}
+
+.img-holder {
+    display: flex;
+}
+
+.img-holder {
+    position: relative; /* Ensure z-index stacking context */
+}
+
+.img-holder::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Center it */
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(
+        circle,
+        rgba(114, 244, 0, 0.4) 0%,
+        rgba(0, 255, 0, 0) 70%
+    );
+    transform: translate(-50%, -50%);
+    filter: blur(80px);
+    z-index: -1; /* Put it behind everything */
+    pointer-events: none; /* Let clicks and typing pass through */
+}
+
+
+.lang-option {
+    padding-right: 75px;
+}
+
+.lang-option h1 {
+    font-family: 'Arial';
+    
+}
+
+.eng {
+    cursor: pointer;
+}
+
+.eng:hover {
+    color: #bcb005;
+}
+
+.de {
+    cursor: pointer;
+}
+
+.de:hover {
+    color: #bcb005;
+}
+
+.head_img {
+    position: relative; 
+    z-index: 1;
+    height: 890px;
+    max-width: 100%;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-title h1{
+    font-size: 90px;
+    padding-bottom: 20px;
+}
+
+.description h1 {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.search-tool {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-button {
+    position: relative;
+    left: 60px;
+    display: flex;
+    height: 15px;
+    border-radius: 30px;
+    width: 170px;
+    padding-bottom: 40px;
+    align-items: center;
+    background-color: #54ba05;
+}
+
+.search-button h1 {
+    position: relative;
+    right: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+.hunt-option a{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    text-decoration: none;
+    color: rgb(247, 245, 245);
+    font-family: Arial;
+    font-size: 30px;
+    cursor:pointer
+}
