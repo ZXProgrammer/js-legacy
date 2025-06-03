@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    
+}
+
+.nav-bar h1 {
+    font-size: 40px;
+    font-family: 'Manrope';
+    color: rgb(255, 254, 254);
+}
+
+.nav-bar {      
+    display: flex;
+    align-items: center;            
+    height: 10vh;
+    background-color: #08385f;;
+}
+
+.top-two {
+    padding-left: 100px;
+    display: flex;
+    gap: 30px;
+}    
+
+.main-logo {
+    height: 75px;
+}
+
+.menu-main-logo {
+    height: 75px;
+    padding-left: 75px;
+    padding-bottom: 60px;
+}
+
+.menu-logo {  
+    padding-top: 15px;         
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute; 
+    top: 0;         
+    padding-top: 25px; 
+    background-color: #063255;;
+    height: 117vh;
+    width: 320px;
+    animation: slideFadeIn 0.6s ease-in-out forwards;
+}    
+
+.menu-items {
+    padding-top: 50px;
+    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: 'Poppins';
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    animation: slideFadeIn 0.6s ease-in-out forwards;
+}      
+
+.todo-section {
+    display: flex;
+    gap: 20px;
+}
+
+.calculator-section {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-section {
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 175px;
+    background-color: #3ea4f8;
+}
+
+.hero-background {
+    display: flex;
+}
+
+.hero-passage {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero-description h1{
+    font-family: 'Manrope';
+    font-size: 70px;
+    color: rgb(11, 217, 221);
+    background-color: rgb(8, 50, 114);
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+
+}
+
+.hero-description {
+    display: flex ;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.hero-description .app {
+    font-family: 'Manrope';
+    font-size: 70px;
+    color: rgb(170, 228, 222);
+}
+
+.hero-description p {
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #bcf3f4;
+}
+
+.fizzle-hero {
+    height: 800px;
+    animation: slideToTop 3s ease-in-out forwards;
+}
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-75px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
