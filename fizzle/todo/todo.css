@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    
+}
+
+.nav-bar h1 {
+    font-size: 40px;
+    font-family: 'Manrope';
+    color: rgb(255, 254, 254);
+}
+
+.nav-bar {      
+    display: flex;
+    align-items: center;            
+    height: 10vh;
+    background-color: #08385f;;
+}
+
+.top-two {
+    padding-left: 100px;
+    display: flex;
+    gap: 30px;
+}    
+
+.main-logo {
+    height: 75px;
+}
+
+.menu-main-logo {
+    height: 75px;
+    padding-left: 75px;
+    padding-bottom: 60px;
+}
+
+.menu-logo {  
+    padding-top: 15px;         
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute; 
+    top: 0;         
+    padding-top: 25px; 
+    background-color: #063255;;
+    height: 100vh;
+    width: 320px;
+    animation: slideFadeIn 0.6s ease-in-out forwards;
+}    
+
+.menu-items {
+    padding-top: 50px;
+    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: 'Poppins';
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    animation: slideFadeIn 0.6s ease-in-out forwards;
+}      
+
+.todo-section {
+    display: flex;
+    gap: 20px;
+}
+
+.calculator-section {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-section {
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-right: 50px;
+    background: linear-gradient(to bottom, #125aac, #bbffce);
+}
+
+.box {
+    font-family: 'Manrope';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+    margin-top: 175px;
+    padding-top: 50px;
+    padding-right: 15px;
+    gap: 30px;
+    height: 60vh;
+    width: 400px;
+    background: linear-gradient(to bottom, #E3EFF9, #A3CAE5, #70ABD5);
+    border-radius: 25px;
+} 
+
+.box h2 {
+    font-size: 15px;
+    color: rgb(19, 139, 145);
+    display: none;
+}
+
+.input-bar {
+    display: flex;
+    padding-left: 20px;
+}
+
+.todo-input {
+    font-family: 'Manrope';
+    font-size: 20px;
+    background-color: rgb(232, 231, 231);
+    border:  rgb(232, 231, 231);
+    height: 5vh;
+    width: 350px;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+
+.add-button {
+    font-size: 30px;
+    position: relative;
+    right: 50px;
+    background-color: rgb(25, 171, 187);
+    border-radius: 50%;
+    height: 3.3rem;
+    width: 3.3rem; 
+    cursor: pointer;                          
+}
+
+.symbol {
+    color: rgb(255, 253, 253);
+    position: relative;
+    left: 13px;
+    bottom: 5px;
+}
+
+.input-holder {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs {
+    border: rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+    height: 5vh;
+    width: 330px;
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;   
+    padding: 0 10px;           
+    border-radius: 10px; 
+}
+
+.remove-icon {
+    height: 45px;
+    cursor: pointer;
+}
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-75px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
