@@ -1,0 +1,129 @@
+* {
+    margin:0;
+}
+
+* {
+    margin: 0;
+    
+}
+
+.nav-bar h1 {
+    font-size: 40px;
+    font-family: 'Manrope';
+    color: rgb(255, 254, 254);
+}
+
+.nav-bar {      
+    display: flex;
+    align-items: center;            
+    height: 10vh;
+    background-color: #08385f;;
+}
+
+.top-two {
+    padding-left: 100px;
+    display: flex;
+    gap: 30px;
+}    
+
+.main-logo {
+    height: 75px;
+}
+
+.menu-main-logo {
+    height: 75px;
+    padding-left: 75px;
+    padding-bottom: 60px;
+}
+
+.menu-logo {  
+    padding-top: 15px;         
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-bar {
+  position: relative;
+  z-index: 100;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  padding-top: 25px;
+  background-color: #063255;
+  animation: slideFadeIn 0.6s ease-in-out forwards;
+  z-index: 101; /* bring menu above the carousel stacking context */
+}
+
+.menu-items {
+    padding-top: 50px;
+    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: 'Poppins';
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    animation: slideFadeIn 0.6s ease-in-out forwards;
+}      
+
+.todo-section {
+    display: flex;
+    gap: 20px;
+}
+
+.calculator-section {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-section {
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #030304, hsl(240, 2%, 25%));
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-button-next {
+    position: relative;
+    left: 200px;
+}
+
+.swiper-slide img {
+    width: 100;
+}
+
+.csl {
+    height: 700px;
+    width: 1550px;
+}
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-75px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

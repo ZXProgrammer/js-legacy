@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maiden+Orange&family=Manrope:wght@200..800&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maiden+Orange&family=Manrope:wght@200..800&family=Oleo+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Carousel</title>
+</head>
+
+<body>
+    <section class="nav-bar">
+        <div class="top-two">
+            <img class="menu-logo" src="images/menu_white.svg" alt="">
+            <a href="../main.html"><img class="main-logo" src="images/fizzle.svg" alt=""></a>
+        </div>
+
+        <div class="menu">
+            <a href="../main.html"><img class="menu-main-logo" src="images/fizzle.svg" alt=""></a>
+            <div class="menu-items">
+                <div class="todo-section">
+                    <img src="images/todo.svg" alt="">
+                    <a href="../todo/todo.html">ToDo</a>
+                </div>
+                <div class="calculator-section">
+                    <img src="images/calculator.svg" alt="">
+                    <a href="../calculator/calculator.html">Calculator</a>
+                </div>
+                <div class="carousel-section">
+                    <img src="images/carousel.svg" alt="">
+                    <a href="./carousel.html">Carousel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img class="csl" src="images/CSL1.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="csl" src="images/CSL2.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="csl" src="images/CSL3.png" alt=""></div>
+                <div class="swiper-slide"><img class="csl" src="images/CSL4.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="csl" src="images/CSL5.jpg" alt=""></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+    <script src="carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+</body>
+
+</html>
