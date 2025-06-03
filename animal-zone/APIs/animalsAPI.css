@@ -1,0 +1,130 @@
+/* Reset and base */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Hero section */
+.hero {
+    height: 150vh;
+    background: linear-gradient(to bottom, #162e04, rgb(78, 104, 78), #657c65);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Title styling */
+.hero a {
+    text-decoration: none;
+    color: rgb(217, 245, 214);
+    padding-left: 75px;
+    padding-top: 40px;
+    position: relative;
+    top: 30px;
+    letter-spacing: 0.02cm;
+    font-weight: 100;
+    font-size: 30px;
+    font-family: Impact, sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Animal API section */
+.animalAPI {
+    padding-left: 70px;
+}
+
+/* Section heading */
+.animalAPI p {
+    font-family: Impact, sans-serif;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Input field */
+.animalAPI .animalInput {
+    height: 50px;
+    width: 260px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.animalAPI .animalInput::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+.animalAPI .animalInput:focus {
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+
+/* Search button */
+.animalAPI button {
+    height: 50px;
+    width: 140px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.animalAPI button:hover {
+    background: linear-gradient(135deg, #43a047, #66bb6a);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.animalAPI button:active {
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+/* Animal card */
+.animal-card {
+    padding: 20px;
+    margin: 30px 30px 30px 0;
+    background: #d9e6d0;
+    color: #222;
+    border-radius: 12px;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.animal-card p {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+}
+
+.animal-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
